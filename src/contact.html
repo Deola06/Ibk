@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibukun Rahmon</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="flex flex-col min-h-screen items-center justify-center bg-bg-main text-brown font-plain dark:bg-dark-bg-main dark:text-light-cream">
+    <div class="container mx-auto px-4 lg:max-w-screen-lg w-full p-3 gap-3 flex flex-col">
+        <!-- Header Section -->
+        <header>
+            <nav class="container mx-auto px-4 lg:max-w-screen-lg bg-light-cream border-gray-200 dark:bg-dark-brown dark:border-gray-700">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <!-- Logo and brand name -->
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <span class="self-center text-2xl font-semibold font-fun space-nowrap dark:text-light-cream">Ibukun Rahmon</span>
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-dark-brown rounded-lg md:hidden focus:outline-none dark:text-light-cream" aria-controls="navbar-dropdown" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                    <!-- Navigation Links -->
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-dark-brown dark:border-gray-700">
+                            <!-- Navigation Items -->
+                            <li><a href="index.html" class="block py-2 px-3 dark:text-light-cream text-dark-brown rounded md:bg-transparent md:text-brown md:p-0 md:dark:text-light-cream md:dark:bg-transparent" aria-current="page">About</a></li>
+                            <li>
+                                <!-- Dropdown Menu for Works -->
+                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-dark-brown rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-brown md:p-0 md:w-auto dark:text-light-cream md:dark:hover:text-light-cream dark:focus:text-light-cream dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                                    <a href="works.html">Works</a> 
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                    </svg>
+                                </button>
+                                <!-- Dropdown Content -->
+                                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-gray-50 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                    <ul class="py-2 text-sm text-dark-brown dark:text-light-cream" aria-labelledby="dropdownLargeButton">
+                                        <li><a href="works.html#portraits" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Portraits</a></li>
+                                        <li><a href="works.html#dinners" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Dinners and Parties</a></li>
+                                        <li><a href="works.html#events" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Events</a></li>
+                                        <li><a href="works.html#sports" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Sports</a></li>
+                                        <li><a href="works.html#commercials" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Commercials</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="contact.html" class="block py-2 px-3 dark:text-light-cream text-dark-brown rounded md:bg-transparent md:text-brown md:p-0 md:dark:text-light-cream md:dark:bg-transparent">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End of Header -->
+
+        <!-- Main content section -->
+        <main class="bg-light-cream dark:bg-dark-brown">
+            <section class="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg">
+                <h2 class="mb-1 text-center text-brown dark:text-light-cream font-fun">Contact Me</h2>
+                <p class="mb-8 lg:mb-16 text-center text-brown dark:text-light-cream sm:text-base">Looking to hire me for a project? Have inquiries or questions about my services? Let’s talk!</p>
+                
+                <!-- Contact Form -->
+                <form name="contact"  action="https://formspree.io/f/xqaavpjo"
+                method="POST" class="space-y-8" enctype="application/json">
+                    <!-- Name Input -->
+                    <div>
+                        <label for="subject" class="block mb-2 text-sm font-medium text-brown dark:text-light-cream">Name</label>
+                        <input type="text" id="subject" class="block p-3 w-full text-sm text-light-cream bg-brown dark:bg-light-cream dark:border-gray-900 border border-gray-300 shadow-sm dark:text-dark-brown" placeholder="Your name..." required>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-brown dark:text-light-cream">Your email</label>
+                        <input type="email" id="email" class="shadow-sm bg-brown dark:bg-light-cream dark:border-gray-900 border border-gray-300 text-light-cream text-sm block w-full p-2.5 dark:text-dark-brown" placeholder="Your email address..." required>
+                    </div>
+
+                    <!-- Message Textarea -->
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium text-brown dark:text-light-cream">Your message</label>
+                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-light-cream bg-brown dark:bg-light-cream dark:border-gray-900 shadow-sm border border-gray-300 dark:text-dark-brown" placeholder="Leave a comment..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class=" py-3 px-5 text-sm font-medium text-center text-light-cream bg-brown sm:w-fit hover:scale-105 dark:bg-light-cream dark:text-dark-brown">Send message</button>
+                </form>
+                
+            </section>
+            <div class="items-center justify-end px-3 py-2 flex flex-row gap-3">  
+                <a href="https://wa.me/2348133186658?text=Hello%2C%20I%E2%80%99d%20like%20to%20hire%20you!">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/rahkind_/">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rahkind_">
+                    <i class="fab fa-tiktok text-xl"></i>
+                </a>
+            </div>
+        </main>
+
+        
+
+    </div>
+
+    <!-- External Script for Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
