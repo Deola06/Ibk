@@ -12,7 +12,10 @@ module.exports = {
   ],
 
   darkMode: 'media', // Enables dark mode based on user system preference
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{html,js}",
+    "./**/*.html"
+  ],
   theme: {
     extend: {
       colors: {
