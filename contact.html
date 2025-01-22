@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boluwatife Rahmon</title>   
+    <title>Boluwatife Rahmon</title> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Viaoda+Libre&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
     <link rel="stylesheet" href="./output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   
 </head>
 
 <body class="flex flex-col min-h-screen items-center justify-center bg-bg-main text-brown font-plain dark:bg-dark-bg-main dark:text-light-cream">
@@ -59,54 +61,53 @@
         </header>
         <!-- End of Header -->
 
-        <!-- Main Content Area -->
-        <div class="flex flex-col sm:flex-row gap-3 w-full">
-            <!-- Main Content -->
-            <main class="flex flex-col sm:w-3/5 gap-3 relative">
-                <!-- Hero Section -->
-                <section class="flex flex-col md:flex-row gap-3 relative">
-                    <!-- Text Section -->
-                    <div class="md:w-2/3 bg-light-cream p-3 lg:hover:scale-105 transition-transform relative flex flex-col justify-center dark:bg-dark-brown">
-                        <h2 class="font-fun pt-8 text-brown dark:text-light-cream">
-                            Let's capture your moments, one <i class="font-normal">shot</i> at a time
-                        </h2>
+        <!-- Main content section -->
+        <main class="bg-light-cream dark:bg-dark-brown">
+            <section class="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg">
+                <h2 class="mb-1 text-center text-brown dark:text-light-cream font-fun">Contact Me</h2>
+                <p class="mb-8 lg:mb-16 text-center text-brown dark:text-light-cream sm:text-base">Looking to hire me for a project? Have inquiries or questions about my services? Let’s talk!</p>
+                
+                <!-- Contact Form -->
+                <form name="contact"  action="https://docs.google.com/forms/d/e/1FAIpQLSe-__cV0mwhIJd4CBpf539tjQUoOLrDxTc8nCldKQH07mZWSA/formResponse"
+                class="space-y-8">
+                    <!-- Name Input -->
+                    <div>
+                        <label for="entry.2116052852" class="block mb-2 text-sm font-medium text-brown dark:text-light-cream">Name</label>
+                        <input type="text" name="entry.2116052852" id="subject" class="block p-3 w-full text-sm text-light-cream bg-brown dark:bg-light-cream dark:border-gray-900 border border-gray-300 shadow-sm dark:text-dark-brown" placeholder="Your name..." required>
                     </div>
-                    <!-- Image Section -->
-                    <img src="img/ib2.jpg" alt="Photographer at work" class="md:w-1/3 w-full h-auto lg:hover:scale-105 transition-transform relative">
-                </section>
 
-                <!-- About and Contact Section -->
-                <section class="flex flex-col md:flex-row gap-3 relative">
-                    <!-- About Me -->
-                    <div class="md:w-1/2 bg-light-cream p-3 lg:hover:scale-105 transition-transform text-xs relative dark:bg-dark-brown">
-                        <p class="pb-8 pt-16 leading-tight text-brown dark:text-light-cream">
-                            I am a creative storyteller and self-driven filmmaker passionate about crafting compelling
-                            narratives with a strong identity. My goal is to engage audiences and amplify a client’s
-                            impact within their market through powerful storytelling.
-                        </p>
+                    <!-- Email Input -->
+                    <div>
+                        <label for="entry.1558582620" class="block mb-2 text-sm font-medium text-brown dark:text-light-cream">Your email</label>
+                        <input type="email" name="entry.1558582620" id="email" class="shadow-sm bg-brown dark:bg-light-cream dark:border-gray-900 border border-gray-300 text-light-cream text-sm block w-full p-2.5 dark:text-dark-brown" placeholder="Your email address..." required>
                     </div>
-                    <!-- Contact Section -->
-                    <div class="relative md:w-1/2 min-h-40 bg-brown text-light-cream dark:bg-light-cream dark:text-dark-brown p-3 lg:hover:scale-105 transition-transform" onclick="window.location.href='contact.html';">
-                        <span class="absolute top-0 right-3 text-2xl">&#8594;</span>
-                        <p class="text-xs">Want to hire?</p>
-                        <h3 class="font-fun absolute bottom-4 left-3 font-normal">Contact <i>Me</i></h3>
-                    </div>
-                </section>
-            </main>
 
-            <!-- Sidebar -->
-            <aside class="sm:w-2/5 bg-light-cream p-3 lg:hover:scale-[103%] transition-transform relative dark:bg-dark-brown" onclick="window.location.href='works.html';">
-                <span class="absolute top-0 right-3 text-2xl p-3">&#8594;</span>
-                <p class="text-xs p-3">View my work</p>
-                <div class="p-3 gap-3 flex-col flex">
-                    <img class="hidden lg:block" src="img/pot/IMG_0193 - Copy.JPG" alt="">
-                    <img class="lg:hidden" src="img/pot/4.jpg" alt="">
-                    <img class="hidden sm:block md:hidden" src="img/part/IMG_1620 copy.jpg" alt="">
-                    <img class="hidden sm:block md:hidden" src="img/part/IMG_1491.JPG" alt="">
-                    <img class="hidden sm:block md:hidden" src="img/for sports/IMG_3770 copy.jpg" alt="">
-                </div>
-            </aside>
-        </div>
+                    <!-- Message Textarea -->
+                    <div class="sm:col-span-2">
+                        <label for="entry.1060472253" class="block mb-2 text-sm font-medium text-brown dark:text-light-cream">Your message</label>
+                        <textarea type="text" id="message" name="entry.1060472253" rows="6" class="block p-2.5 w-full text-sm text-light-cream bg-brown dark:bg-light-cream dark:border-gray-900 shadow-sm border border-gray-300 dark:text-dark-brown" placeholder="Leave a comment..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class=" py-3 px-5 text-sm font-medium text-center text-light-cream bg-brown sm:w-fit hover:scale-105 dark:bg-light-cream dark:text-dark-brown">Send message</button>
+                </form>
+                
+            </section>
+            <div class="items-center justify-end px-3 py-2 flex flex-row gap-3">  
+                <a href="https://wa.me/2348133186658?text=Hello%2C%20I%E2%80%99d%20like%20to%20hire%20you!">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/rahkind_/">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rahkind_">
+                    <i class="fab fa-tiktok text-xl"></i>
+                </a>
+            </div>
+        </main>
+
+        
+
     </div>
 
     <!-- External Script for Flowbite -->
