@@ -37,17 +37,3 @@
     }
   
 }
-
-@font-face {
-    font-family: 'Inter'; /* The name of your font */
-    src: url('./extras/Inter.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Viaoda Libre'; /* The name of your font */
-    src: url('./extras/ViaodaLibre-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
